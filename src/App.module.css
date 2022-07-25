@@ -1,0 +1,114 @@
+.todo {
+  display: grid;
+  margin: -1.65rem auto;
+  max-width: 46rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  height: 3.3rem;
+}
+
+.form > input {
+  width: 100%;
+  background: var(--gray-500);
+  border: 0;
+  color: var(--gray-100);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.form > button {
+  max-width: 5.625rem;
+  background: var(--blue-dark);
+  font-weight: bold;
+  color: var(--white);
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.form> button:hover {
+  background: var(--blue);
+  cursor: pointer;
+}
+
+.tasks {
+  margin-top: 3rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info strong {
+  color: var(--blue);
+  font-size: 0.875rem;
+}
+
+.total {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.total > span {
+  background: var(--gray-400);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.finished {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.finished > span {
+  background: var(--gray-400);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.taskList {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.noTasks {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    flex-direction: column;
+    border-top: solid 2px var(--gray-500);
+    padding-top: 2rem;
+    line-height: 1.6;
+}
+
+.noTasks svg {
+    color: var(--gray-400);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.hasTasks {
+    display: none;
+}
